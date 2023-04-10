@@ -24,6 +24,6 @@ function containsDuplicate2(nums: number[]): boolean {
 
 // O(n)
 function containsDuplicate3(nums: number[]): boolean {
-  let uniqueNums = new Set([...nums]);
+  let uniqueNums = new Set(nums);
   return uniqueNums.size != nums.length;
 }
