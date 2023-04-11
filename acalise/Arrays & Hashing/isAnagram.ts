@@ -27,5 +27,3 @@ function addLettersToMap(str: string): any {
   }
   return map;
 }
-
-//
