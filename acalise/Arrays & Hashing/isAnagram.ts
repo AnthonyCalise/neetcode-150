@@ -16,14 +16,10 @@ function isAnagram2(s: string, t: string): boolean {
 
 //Helper function for isAnagram2
 function addLettersToMap(str: string): any {
-  let map = {};
+  let map: { [key: string]: number } = {};
   for (let i = 0; i < str.length; i++) {
     let letter = str[i];
-    if (typeof map[letter] === "number") {
-      map[letter]++;
-    } else {
-      map[letter] = 1;
-    }
+    map[letter] = map[letter] ? map[letter] + 1 : 1;
   }
   return map;
 }
