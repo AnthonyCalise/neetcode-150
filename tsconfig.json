@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "dist",
+      "strict": true,
+      "esModuleInterop": true
+    },
+    "include": [
+      "acalise/**/*.ts",
+      "acalise/**/*.js",
+      "atoci/**/*.ts",
+      "atoci/**/*.js",
+      "rgasparini/**/*.ts",
+      "rgasparini/**/*.js",
+      "cgoro/**/*.js",
+      "cgoro/**/*.ts"
+    ]
+}
+  
