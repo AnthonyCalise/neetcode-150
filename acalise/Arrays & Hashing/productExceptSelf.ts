@@ -1,4 +1,5 @@
 // O(n)
+// I CHEATED, CANT USE DIVISON
 function productExceptSelf(nums: number[]): number[] {
   const answer: number[] = [];
   let product = 1;
