@@ -1,0 +1,21 @@
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+ var isAnagram = function(s, t) {
+    var charMap1 = {};
+    var charMap2 = {};
+    for (var i = 0; i < s.length; i++) {
+        if (charMap1[s[i]]) charMap1[s[i]]++
+        else charMap1[s[i]] = 1;
+    }
+    for (var i = 0; i < t.length; i++) {
+        if (charMap2[t[i]]) charMap2[t[i]]++
+        else charMap2[t[i]] = 1;
+    }
+    for (var key in charMap1) {
+        if (charMap2[key] === undefined || charMap2[key] !== charMap1[key]) return false;
+    }
+    return Object.keys(charMap1).length === Object.keys(charMap2).length;
+};
