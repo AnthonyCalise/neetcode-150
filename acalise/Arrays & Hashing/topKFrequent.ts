@@ -4,7 +4,7 @@ function topKFrequent(nums: number[], k: number): number[] {
   for (let i = 0; i < nums.length; i++) {
     countMap[nums[i]] = countMap[nums[i]] ? countMap[nums[i]] + 1 : 1;
   }
-  let numCounts = [];
+  let numCounts: number[][] = [];
   for (const key in countMap) {
     numCounts.push([parseInt(key), countMap[key]]);
   }
